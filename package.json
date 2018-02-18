@@ -1,7 +1,7 @@
 {
-  "name": "heyer.js",
+  "name": "yourlibname.js",
   "version": "1.0.0",
-  "description": "heyer.js",
+  "description": "yourlibname.js",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blopa/heyer.js.git"
+    "url": "git+https://github.com/blopa/base-webpack-library.git"
   },
   "author": "Pablo Montenegro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/blopa/heyer.js/issues"
+    "url": "https://github.com/blopa/base-webpack-library/issues"
   },
-  "homepage": "https://github.com/blopa/heyer.js#readme",
+  "homepage": "https://github.com/blopa/base-webpack-library#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -7,49 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,600,700" rel="stylesheet" />
-        <title>heyer.js</title>
+        <title>yourlibname.js</title>
     </head>
     <body>
-        <div id="app">
-            <h1>{{text}} using heyer.js</h1>
-            <input type="checkbox" hr-model="myInput"/>
-            <label>Show / Hide</label>
-            <ul hr-if="myInput">
-                <li hr-loop="(value, key) in list">List -> {{value}}</li>
-            </ul>
-            <button hr-onclick="addItem">Add Item!</button>
-            <button hr-onclick="sayHello">Say Hello!</button>
-        </div>
-        <script src="/heyer.js"></script>
+        <div id="app"></div>
+        <script src="/yourlibname.js"></script>
         <script type="text/javascript">
-            Heyer({
-                el: '#app',
-                models: {
-                    show: false,
-                    myInput: false,
-                    list: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
-                },
-                data: {
-                    text: 'Hello World',
-                    index: 0,
-                },
-                functions: {
-                    sayHello: function () {
-                        window.alert('Hello!');
-                    },
-                    addItem: function () {
-                        var arr = Heyer.getModelData('list').value;
-                        var index = Heyer.getData('index');
-                        arr.push('Item ' + index);
-                        index++;
-                        Heyer.setModelData('list', arr);
-                        Heyer.setData('index', index);
-                    }
-                },
-                created: function () {
-                    Heyer.setModelData('list', ['Item A', 'Item B', 'Item C', 'Item D', 'Item E', 'Item F', 'Item G', 'Item H']);
-                },
-            });
+            YourLibName({});
         </script>
     </body>
 </html>
